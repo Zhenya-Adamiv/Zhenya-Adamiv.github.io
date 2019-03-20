@@ -1,0 +1,714 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1600px)
+   .header
+      &-menu
+         margin-left: 13%
+         ul
+            li
+               margin-right: 3%
+   .main
+      .row
+         justify-content: space-around
+      &-left
+         margin-left: 0
+   .programs
+      &-block
+         &__title
+            font-size: 22px
+         &__price
+            font-size: 22px
+   .gallery
+      &-top
+         &__img
+            height: 500px
+      &-thumbs
+         img
+            height: 150px
+      &-pagination
+            width: 280px
+            height: 150px
+      &-btn
+         bottom: 55px
+         &-next
+            left: 203px
+      &-thumbs
+         padding-left: 290px
+   .lid
+      &-left
+         width: 50%
+         margin-right: 0
+         margin-left: 0
+      &-right
+         width: 50%
+      &-block
+         &__title
+            margin-bottom: 40px
+         &__subtitle
+            margin-bottom: 40px
+   .instructor
+      &-block
+         height: 650px
+         &__title
+            font-size: 1.4em                                   
+
+@media (max-width: 1460px)
+   .programs
+      padding-top: 150px
+   .header
+      &-menu
+         ul
+            li
+               a
+                  font-size: 1em
+   .about
+      &-img
+         margin-top: 30px
+         transform: translateY(0)
+         width: 80%
+   .gallery
+      &-top
+         max-height: 100%
+         &__img
+            width: 100%
+            height: auto
+            padding-bottom: 56.25%
+            img
+               position: absolute
+               left: 0
+               top: 0
+               width: 100%
+               height: 100%
+               object-fit: cover
+      &-thumbs
+         img
+            height: 130px
+      &-pagination
+         width: 250px
+         height: 130px
+      &-btn
+         left: 40px
+         bottom: 45px
+         &-next
+            left: 183px
+      &-thumbs
+         padding-left: 260px
+   .lid
+      .row
+         margin-right: -15px
+         margin-left: -15px
+      &-col
+         padding: 0 15px   
+      &-block
+         form
+            max-width: 100%
+   .instructor
+      &-col
+         width: 50%
+      &-block
+         margin-bottom: 30px
+   .activity
+      &-col
+         min-height: 300px
+      &-block
+         min-height: 300px
+         &__title
+            font-size: 1.3em
+            margin-bottom: 20px
+            line-height: 1.3
+         &__date
+            margin-bottom: 20px                                      
+   .blog
+      &-col
+         min-width: 550px
+   .contacts
+      &-block
+         &__phone
+            font-size: 2em
+         &__soc
+            height: 50px
+            width: 70px 
+            margin-right: 30px                                   
+
+@media (max-width: 1366px)
+   .container
+      padding: 0 30px
+   .header
+      &-menu
+         margin-left: 12%
+         ul
+            li
+               margin-right: 2.8%
+               a
+                  font-size: 0.975em   
+   .main
+      &-button
+         width: 70px
+         height: 70px   
+   .about
+      &-left
+         .italic
+            margin-left: 0
+
+@media (max-width: 1100px)
+   .header
+      &-menu
+         ul
+            li
+               margin-right: 2.5%
+               a
+                  font-size: 0.875em
+   .main
+      &-left
+         width: 37.7%
+      &-right
+         width: 62.3%   
+      &-form
+         padding: 50px 25px
+         &__title
+            font-size: 2.1em
+      &-title
+         h1
+            font-size: 2.5em
+      &-button
+         width: 43px
+         height: 43px
+   .about
+      &-img
+         width: 100%
+   .gallery
+      .section-title
+         margin-bottom: 30px
+   .activity
+      .row
+         display: flex
+         flex-wrap: nowrap
+         padding-bottom: 80px
+      &-col
+         min-width: 400px
+         width: 40%
+      &-arrow
+         display: block
+      &-block
+         min-height: 0
+         height: 400px
+   .contacts
+      &-col
+         min-width: 50%
+      &-jcc
+         justify-content: flex-start
+      &-block
+         margin-bottom: 30px                               
+
+@media (max-width: 960px)
+   .section-title
+      h2
+         padding-left: 11%
+   .header
+      position: fixed
+      .logo
+         left: auto
+         right: 0
+         height: 95px
+         max-width: 100%
+         img
+            width: auto
+            height: 95px
+      &-menu
+         display: none
+   .main
+      padding: 200px 0 100px
+      &:before
+         bottom: -55%
+      .row
+         flex-wrap: wrap
+      &-left
+         order: 1
+         width: 100%
+         margin-right: 0
+      &-right
+         width: 100%
+         margin-bottom: 20px    
+      &-title
+         margin-top: 0
+         h1
+            font-size: 2.625em
+            br
+               display: block
+         p
+            max-width: 400px      
+      &-mobile
+         display: block
+      &-button
+         margin: 0px 0px 0px auto        
+   .menu
+      &-mobile
+         display: block
+         padding: 120px 0 30px
+         ul
+            li
+               a
+                  display: block
+                  color: #fff
+                  text-transform: uppercase
+                  padding: 18px 20px
+                  font-size: 1.2
+                  &:hover
+                     color: $accent
+      &-button
+         display: block
+         position: fixed
+         top: 0px
+         left: 0px
+         padding: 30px
+         cursor: pointer
+         transition: .3s
+         z-index: 1000
+         .bar
+            position: relative
+            display: block
+            width: 50px
+            height: 4px
+            margin: 10px auto
+            background-color: #fff
+            border-radius: 10px
+            transition: .3s
+            &:nth-of-type(1) 
+               margin-top: 0px
+            &:nth-of-type(3) 
+               margin-bottom: 0px
+   .slideout
+      &-menu
+         position: fixed
+         top: 0
+         bottom: 0
+         width: 100%
+         min-height: 100vh
+         overflow-y: scroll
+         -webkit-overflow-scrolling: touch
+         z-index: 0
+         display: none
+         background-color: #000
+         &-left 
+            left: 0
+         &-right 
+            right: 0
+      &-panel
+         position: relative
+         z-index: 1
+         will-change: transform
+         background-color: #FFF
+         min-height: 100vh
+
+   .slideout-open,
+   .slideout-open body,
+   .slideout-open .slideout-panel 
+      overflow: hidden
+   .slideout-open .slideout-menu 
+      display: block
+   .about
+      padding: 50px 0 0
+      &-left
+         width: 100%
+      &-right
+         width: 100%
+         img
+            margin: 0 auto
+   .programs
+      &-block
+         padding: 20px
+         &__title
+            font-size: 20px
+         &__price
+            font-size: 20px          
+   .gallery
+      &-top
+         &__img
+            a
+               display: block
+   .lid
+      &-block
+         &__title
+            font-size: 2.3em
+   .instructor
+      &-block
+         padding: 30px 25px
+   .blog
+      &-col
+         width: 400px
+         min-width: 0
+      &-block
+         flex-direction: column
+         &__img
+            width: 100%
+            height: 320px
+         &__text
+            width: 100%         
+                            
+@media (max-width: 768px)
+   .container
+      width: 100%
+   .main
+      padding: 130px 0 0
+      background-size: auto 665px
+      background-position: center top 95px
+      background-color: #000
+      &:before
+         bottom: -56%
+         background-size: 120% auto
+      // .container
+      //    z-index: 0
+      &-right
+         position: relative
+         height: 573px
+      &-title
+         margin-bottom: 70px     
+      &-form
+         margin: 0 -32px
+   .about
+      &-left
+         font-size: 1em
+      &-img
+         flex-direction: column
+         &__block
+            position: relative
+            max-width: 355px
+            &:nth-child(1)
+               margin-left: auto
+            &:nth-child(2)
+               margin-left: 0
+               margin-top: -10%
+            &:nth-child(3)
+               margin-left: auto
+               margin-top: -10%
+            &:nth-child(4)
+               margin-left: 0
+               margin-top: -10%			
+            &:nth-child(2n)
+               top: 0
+   .programs
+      .swiper-button-next, .swiper-button-prev
+            display: none
+      .swiper
+         &-container
+            padding-bottom: 50px
+         &-scrollbar
+            display: block
+      &-block
+         min-height: 500px
+         &__title
+            font-size: 18px
+            margin-bottom: 20px
+         &__price
+            font-size: 18px
+         &__btn
+            padding: 20px
+   .gallery
+      padding-bottom: 0
+      .container
+         padding-left: 0
+         padding-right: 0
+      &-tabs
+         &__title
+            .swiper-wrapper
+               justify-content: flex-start
+               margin-bottom: 0
+            li
+               white-space: nowrap
+         &__content
+            top: 100px
+      &-top
+         margin-bottom: -1px
+         .date
+            bottom: 20px
+            font-size: 1em
+         a
+            bottom: 20px
+      &-thumbs
+         height: 110px
+         .swiper-wrapper
+            opacity: 0        
+      &-pagination
+         width: 100%
+         height: 110px
+      &-btn
+         left: 30px
+         bottom: 25px
+         &-next
+            left: auto
+            right: 30px
+   .lid
+      &-col
+         width: 100%
+         img
+            margin: 0 auto
+            width: 320px
+   .instructor
+      &-col
+         width: 100%
+      &-block
+         &__span
+            display: inline-block
+   .activity
+      &-arrow
+         display: none
+      &-scrollbar
+         display: block
+      &-block
+         padding: 20px               
+   .blog
+      .row
+         padding-bottom: 60px
+      &-slider
+         margin-left: -10px
+         margin-right: -10px
+      &-col
+         width: 370px
+         padding: 0 10px
+      &-block
+         margin-bottom: 20px
+         &__img
+            height: 230px
+         &__text
+            padding: 30px 15px
+            p
+               margin-bottom: 30px
+      &-arrow
+         display: none
+      &-scrollbar
+         display: block
+   .contacts
+      &-block
+         font-size: 1em
+         &__phone
+            font-size: 1.8em      
+   .popup
+      &-blog
+         padding: 40px 15px
+         width: 95%
+         img
+            float: none
+            margin: 0 auto 30px
+         h2
+            text-align: center
+            font-size: 1.8em
+         p 
+            font-size: 0.875em
+                 
+
+@media (max-width: 590px)
+   body
+      font-size: 15px
+   .container
+      padding: 0 20px
+   .btn
+      &-main
+         padding: 24px  
+   .section-title
+      h2
+         font-size: 36px
+         &:before
+            width: 15%
+            left: -12%
+         &:after
+            left: calc(15% - 12%)
+   .header
+      height: 70px
+      .logo
+         img
+            min-height: 0
+            height: 70px
+   .menu-button
+      padding: 20px                      
+   .main
+      background-size: auto 625px
+      background-position: center top 70px
+      &-right
+         height: 535px
+      &-title
+         margin-bottom: 50px
+         p
+            font-size: 0.925em
+      &-button
+         position: absolute
+         bottom: 15px
+         right: 0px
+   .about
+      &-left
+         font-size: 0.925em
+   .programs
+      &-block
+         min-height: 450px
+         &__title
+            font-size: 16px
+            margin-bottom: 15px
+            line-height: 1.3
+         &__price
+            font-size: 16px  
+            margin-bottom: 15px
+         &__desc
+            font-size: 13px
+            line-height: 22px
+            margin-bottom: 15px            
+         &__btn
+            padding: 18px
+            font-size: 1em
+   .gallery
+      &-top
+         .date
+            font-size: 14px
+      &-thumbs
+         height: 90px
+      &-pagination
+         height: 90px
+         span
+            &.swiper-pagination
+               &-current
+                  font-size: 16px
+               &-total
+                  font-size: 14px
+      &-btn
+         bottom: 27px  
+         width: 20px
+         height: 30px
+   .instructor
+      .container
+         padding: 0
+      .row
+         margin: 0   
+      &-col
+         padding: 0   
+      .section-title
+         padding: 0 20px   
+      &-block
+         margin-bottom: 0
+   .video
+      .container
+         padding: 0
+      .section-title
+         padding: 0 20px    
+   .activity
+      .container
+         padding: 0
+      .row
+         padding-bottom: 60px   
+      .section-title
+         padding: 0 20px   
+      &-col
+         min-width: 320px
+      &-block
+         padding: 10px
+         &__title
+            font-size: 1.2em
+   .blog
+      .section-title
+         padding-left: 15px
+         padding-right: 15px
+      .container
+        padding: 0
+      &-slider
+         margin-left: -5px
+         margin-right: -5px  
+      &-col
+         width: 320px
+         padding: 0 5px
+      &-block
+         margin-bottom: 10px
+         &__img
+            height: 200px
+         &__text
+            padding: 20px 10px
+            h3
+               margin-bottom: 15px
+            p
+               margin-bottom: 15px
+   .contacts
+      &-col
+         width: 100%            
+   .popup
+      &-blog
+         padding-left: 10px
+         padding-right: 10px
+         width: 100%
+         h2
+            margin-bottom: 20px
+         a.close-modal
+            top: 5px
+            right: 5px                                                  
+@media (max-width: 400px)
+   body
+      font-size: 14px
+   .main
+      &-title
+         h1
+            font-size: 2.3em
+   .menu
+      ul
+         li
+            a
+               font-size: 0.85em
+               padding: 18px 15px
+   .about
+      &-img
+         flex-direction: column
+         &__block
+            position: relative
+            max-width: 355px
+            width: 100%
+            margin: 0!important
+            img
+               width: 100%
+   .programs
+      .swiper-container
+         margin-left: -10px
+         margin-right: -10px
+      &-col
+        padding: 0 10px
+        min-width: 260px
+      &-block
+         min-height: 400px
+         padding: 15px 10px
+         &__title
+            font-size: 16px
+            margin-bottom: 15px
+            line-height: 1.3
+         &__price
+            font-size: 16px  
+            margin-bottom: 15px
+         &__desc
+            font-size: 13px
+            line-height: 20px
+            margin-bottom: 15px            
+         &__btn
+            padding: 18px
+            font-size: 1em
+   .gallery
+      &-top
+         .date
+            font-size: 10px
+         a
+            width: 15px
+            height: 15px   
+      &-thumbs
+         height: 70px
+      &-pagination
+         height: 70px
+         span
+            &.swiper-pagination
+               &-current
+                  font-size: 14px
+               &-total
+                  font-size: 12px
+      &-btn
+         bottom: 20px  
+         width: 17px
+         height: 27px
+   .activity
+      &-col
+         min-width: 270px
+   .blog
+      &-col
+         width: 270px                                                            
